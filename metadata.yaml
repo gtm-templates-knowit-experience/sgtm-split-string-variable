@@ -1,0 +1,6 @@
+homepage: "https://github.com/gtm-templates-knowit-experience/"
+documentation: "https://github.com/gtm-templates-knowit-experience/sgtm-split-string-variable"
+versions:
+  # Latest version
+  - sha: 40617e63f1ebddec722b8ba759415f54c5d913ee
+    changeNotes: Initial release.
