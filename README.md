@@ -4,8 +4,8 @@ Variable Template (Server) for Google Tag Manager for splitting a string. You ca
 ![Split String SGTM Variable](https://github.com/gtm-templates-knowit-experience/sgtm-split-string-variable/blob/main/images/sgtm-split-string-variable.png)
 
 ## Delimiter
-* Use any delimiter for splitting the string
-* Splitting a string based spaces in the string, type **space** as delimiter
+* Type in a delimiter for splitting the string
+  * To split a string based spaces in the string, type **space** as delimiter
 * Regular Expression splitting is not supported
 
 ## Select Occurence to Return
