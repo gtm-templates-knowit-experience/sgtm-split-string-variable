@@ -1,6 +1,8 @@
 # Split String - SGTM Variable
 Variable Template (Server) for Google Tag Manager for splitting a string. You can split by first, last or Nth occurrence. Result can be the split result itself, complete string or limited string returned.
 
+This Template is available in the [**Google Tag Manager Template Gallery**](https://tagmanager.google.com/gallery/#/owners/gtm-templates-knowit-experience/templates/sgtm-split-string-variable).
+
 ![Split String SGTM Variable](https://github.com/gtm-templates-knowit-experience/sgtm-split-string-variable/blob/main/images/sgtm-split-string-variable.png)
 
 ## Delimiter
