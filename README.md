@@ -21,7 +21,7 @@ You can split the string using the following methods:
 
 ## Enhanced Split Result
 When splitting a string, only the first result is normally returned.
-If **the-quick-brown-fox-jumps-over-the-lazy-dog** is your string, and you split on **First Occurence**, the result returned is **the**.
+If **the-quick-brown-fox-jumps-over-the-lazy-dog** is your string, and you split using **-** (hyphen) on **First Occurence**, the result returned is **the**.
 
 With **enhanced result** settings, you can either return the **complete string** after the split, or a **limited string**.
 
