@@ -177,14 +177,16 @@ ___SANDBOXED_JS_FOR_SERVER___
 
 const makeString = require('makeString');
 const makeNumber = require('makeNumber');
-const log = require('logToConsole');
+// const log = require('logToConsole');
+
+if (!data.input) return undefined;
 
 const input = makeString(data.input);
 const delimiter = data.delimiter === 'space' ? ' ' : data.delimiter;
 const parts = input.split(delimiter);
 
 let index;
-switch(data.returnValue) {
+switch (data.returnValue) {
   case 'first':
     index = 0;
     break;
@@ -200,37 +202,9 @@ switch(data.returnValue) {
 }
 
 const limit = data.limitReturn ? (makeNumber(index)+makeNumber(data.limitReturn)) : parts.length;
-const result = data.returnAllAfterSplit ? parts.slice(index,limit).join(delimiter): parts[index];
-if(result) {
-  return result;
-}
-
-
-___SERVER_PERMISSIONS___
-
-[
-  {
-    "instance": {
-      "key": {
-        "publicId": "logging",
-        "versionId": "1"
-      },
-      "param": [
-        {
-          "key": "environments",
-          "value": {
-            "type": 1,
-            "string": "debug"
-          }
-        }
-      ]
-    },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
-    "isRequired": true
-  }
-]
+const result = data.returnAllAfterSplit ? parts.slice(index,limit).join(delimiter) : parts[index];
+if (!result) return undefined;
+return result;
 
 
 ___TESTS___
@@ -241,5 +215,4 @@ scenarios: []
 ___NOTES___
 
 Created on 2/22/2022, 9:15:48 PM
-
 
